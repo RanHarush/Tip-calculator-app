@@ -1,0 +1,195 @@
+* {
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.inpWrapper, .container .wrapper .main .right .tipAmountWrapper, .container .wrapper .main .left .numberOfPeople, .container .wrapper .main .left .selectTip, .container .wrapper .main .left .bill, .container .wrapper .main .left, .container .wrapper .logo, .container .wrapper, .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: hsl(185deg, 41%, 84%);
+  max-width: 1440px;
+  margin: auto;
+  min-height: 100vh;
+}
+.container .wrapper {
+  width: 80%;
+  flex-direction: column;
+  gap: 8em;
+}
+.container .wrapper .main {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 3em;
+  border-radius: 2em;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container .wrapper .main .left {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.5em;
+  width: 100%;
+  padding: 0 2em;
+}
+.container .wrapper .main .left .bill {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+  width: 100%;
+}
+.container .wrapper .main .left .bill .inpWrapper:hover {
+  border: 2px solid hsl(172deg, 67%, 45%);
+}
+.container .wrapper .main .left .bill div:first-child {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.container .wrapper .main .left .bill p {
+  font-size: 1.2em;
+  color: rgba(94, 122, 125, 0.8);
+}
+.container .wrapper .main .left .selectTip {
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.container .wrapper .main .left .selectTip p {
+  width: 100%;
+  font-size: 1.2em;
+  color: rgba(94, 122, 125, 0.8);
+}
+.container .wrapper .main .left .selectTip button {
+  width: 30%;
+  font-size: 2em;
+  border-radius: 0.2em;
+  padding: 0.2em 0;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(183deg, 100%, 15%);
+  border: none;
+}
+.container .wrapper .main .left .selectTip button:hover, .container .wrapper .main .left .selectTip button:focus {
+  background-color: rgba(38, 192, 171, 0.5);
+  color: hsl(183deg, 100%, 15%);
+}
+.container .wrapper .main .left .selectTip input {
+  width: 30%;
+  font-size: 2em;
+  padding: 0.2em 0;
+  background-color: rgba(197, 228, 231, 0.2);
+  color: #00494d;
+  border: none;
+}
+.container .wrapper .main .left .selectTip input:focus {
+  outline: none;
+  border: 2px solid hsl(172deg, 67%, 45%);
+  border-radius: 0.2em;
+}
+.container .wrapper .main .left .selectTip input::-moz-placeholder {
+  color: rgba(0, 73, 77, 0.7);
+  text-align: center;
+}
+.container .wrapper .main .left .selectTip input:-ms-input-placeholder {
+  color: rgba(0, 73, 77, 0.7);
+  text-align: center;
+}
+.container .wrapper .main .left .selectTip input::placeholder {
+  color: rgba(0, 73, 77, 0.7);
+  text-align: center;
+}
+.container .wrapper .main .left .numberOfPeople {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+  width: 100%;
+}
+.container .wrapper .main .left .numberOfPeople p {
+  font-size: 1.2em;
+  color: rgba(94, 122, 125, 0.8);
+}
+.container .wrapper .main .left .numberOfPeople div:first-child {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.container .wrapper .main .right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: hsl(183deg, 100%, 15%);
+  padding: 3em;
+  gap: 2em;
+  border-radius: 1em;
+}
+.container .wrapper .main .right .tipAmountWrapper {
+  width: 100%;
+  justify-content: space-between;
+}
+.container .wrapper .main .right .tipAmountWrapper .tipAmountLeft :first-child {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2em;
+}
+.container .wrapper .main .right .tipAmountWrapper .tipAmountLeft :last-child {
+  color: hsl(186deg, 14%, 43%);
+  font-size: 1em;
+}
+.container .wrapper .main .right .tipAmountWrapper h2 {
+  font-size: 3.5em;
+  color: hsl(172deg, 67%, 45%);
+}
+.container .wrapper .main .right .reset {
+  width: 100%;
+  font-size: 1.5em;
+  border-radius: 0.2em;
+  padding: 0.5em 0;
+  text-transform: uppercase;
+  color: rgba(0, 73, 77, 0.5);
+  background-color: rgba(38, 192, 171, 0.2);
+  border: none;
+  margin-top: auto;
+}
+.container .wrapper .main .right .reset:hover {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+}
+
+.inpWrapper {
+  background-color: rgba(197, 228, 231, 0.2);
+  padding: 0.5em 0.8em;
+  border-radius: 0.5em;
+  width: 100%;
+}
+.inpWrapper div {
+  width: 10%;
+}
+.inpWrapper input {
+  width: 90%;
+  font-size: 2em;
+  background-color: transparent;
+  border: none;
+  color: hsl(183deg, 100%, 15%);
+}
+.inpWrapper input::-moz-placeholder {
+  color: rgba(0, 73, 77, 0.3);
+}
+.inpWrapper input:-ms-input-placeholder {
+  color: rgba(0, 73, 77, 0.3);
+}
+.inpWrapper input::placeholder {
+  color: rgba(0, 73, 77, 0.3);
+}
+.inpWrapper input:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

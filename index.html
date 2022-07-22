@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <div class="main">
+          <div class="left">
+            <div class="bill">
+              <div>
+              <p>Bill</p>
+              <p id="invalid2" class="hidden">Can't be zero</p>
+              </div>
+              <div class="inpWrapper">
+                <img src="./images/icon-dollar.svg" alt="" />
+                <input type="text" dir="rtl" placeholder="0" id="bill" onkeyup="calc()" />
+              </div>
+            </div>
+            <div class="selectTip">
+              <p>Select Tip %</p>
+              <button onclick="selectTip('five')" id="five" value="5">5%</button>
+              <button onclick="selectTip('ten')" id="ten" value="10">10%</button>
+              <button onclick="selectTip('fiveteen')" id="fiveteen" value="15">15%</button>
+              <button onclick="selectTip('tweentyfive')" id="tweentyfive" value="25">25%</button>
+              <button onclick="selectTip('fifthy')" id="fifthy" value="50">50%</button>
+              <input type="text" dir="rtl" placeholder="Custom" onchange="selectTip('cust')" id="cust" />
+            </div>
+            <div class="numberOfPeople">
+              <div>
+                <p>Number of People</p>
+                <p id="invalid1" class="hidden">Can't be zero</p>
+              </div>
+              <div class="inpWrapper">
+                <img src="./images/icon-person.svg" alt="" />
+                <input type="text" dir="rtl" placeholder="0" id="inpNumOfPeople" onkeyup="calc()" />
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="tipAmountWrapper">
+              <div class="tipAmountLeft">
+                <p>Tip Amount</p>
+                <p>/ person</p>
+              </div>
+              <h2 class="h2inp">$0.00</h2>
+            </div>
+            <div class="tipAmountWrapper">
+              <div class="tipAmountLeft">
+                <p>Total</p>
+                <p>/ person</p>
+              </div>
+              <h2 class="h2inp">$0.00</h2>
+            </div>
+            <button onclick="clearinp()" class="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
